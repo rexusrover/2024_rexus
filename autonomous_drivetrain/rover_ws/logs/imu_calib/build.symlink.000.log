@@ -1,0 +1,6 @@
+Symlinking /home/je/rover_ws/devel/lib/libaccel_calib.so
+Symlinking /home/je/rover_ws/devel/lib/imu_calib/apply_calib
+Symlinking /home/je/rover_ws/devel/lib/imu_calib/do_calib
+Symlinking /home/je/rover_ws/devel/lib/pkgconfig/imu_calib.pc
+Symlinking /home/je/rover_ws/devel/share/imu_calib/cmake/imu_calibConfig.cmake
+Symlinking /home/je/rover_ws/devel/share/imu_calib/cmake/imu_calibConfig-version.cmake

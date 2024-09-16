@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="name" default="oak" />
+    <arg name="params_file" default="$(find depthai_ros_driver)/config/rgbd.yaml" />
+
+    <!-- <node type="static_transform_publisher" name="oakd_baselink_tf" pkg="tf2_ros" args="1 0 0 0 0 0 base_link oak-d-base-frame"/> -->
+
+
+    <include file="$(find depthai_ros_driver)/launch/camera.launch">
+        <arg name="name" value="$(arg name)"/>
+        <arg name="params_file" value="$(arg params_file)"/>
+    </include>
+
+    <node type="rgbd_odometry" name="rgbd_odometry" pkg="rtabmap_odom">
+
+        <remap from="rgb/image" to="$(arg name)/rgb/image_raw"/>
+        <remap from="rgb/camera_info" to="$(arg name)/rgb/camera_info"/>
+        <remap from="depth/image" to="$(arg name)/stereo/image_raw"/>
+        <remap from="imu" to="/oak/imu/data"/>
+        <param name="frame_id" type="string" value="oak-d-base-frame"/>
+        <param name="Odom/Strategy" type="string" value="8"/>
+        <!--[0=Frame-to-Map (F2M) 1=Frame-to-Frame (F2F) 2=Fovis 3=viso2 4=DVO-SLAM 5=ORB_SLAM2 6=OKVIS 7=LOAM 8=MSCKF_VIO 9=VINS-Fusion 10=OpenVINS 11=FLOAM 12=Open3D]-->
+        <param name="publish_tf" type="string" value="true"/>
+        <param name="wait_imu_to_init" type="string" value="true"/>
+
+
+        <rosparam param="subscribe_depth">True</rosparam>
+        <rosparam param="approx_sync">True</rosparam>
+        <rosparam param="approx_sync_max_interval">0.02</rosparam>
+        <!-- <rosparam param="publish_tf">True</rosparam> -->
+
+    </node> 
+    <node type="rtabmap_viz" name="rtabmap_viz" pkg="rtabmap_viz">
+        <remap from="rgb/image" to="$(arg name)/rgb/image_raw"/>
+        <remap from="rgb/camera_info" to="$(arg name)/rgb/camera_info"/>
+        <remap from="depth/image" to="$(arg name)/stereo/image_raw"/>
+    </node>
+
+
+
+</launch>

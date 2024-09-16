@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/je/rover_ws/devel/.private/cares_msgs/setup.sh

@@ -1,0 +1,64 @@
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target accel_calib[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[ 12%] [32mBuilding CXX object CMakeFiles/accel_calib.dir/src/accel_calib/accel_calib.cpp.o[0m
+[ 25%] [32m[1mLinking CXX shared library /home/je/rover_ws/devel/.private/imu_calib/lib/libaccel_calib.so[0m
+[ 25%] Built target accel_calib
+[35m[1mScanning dependencies of target do_calib[0m
+[35m[1mScanning dependencies of target apply_calib[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/do_calib.dir/src/do_calib_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/apply_calib.dir/src/apply_calib.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/do_calib.dir/src/do_calib.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/apply_calib.dir/src/apply_calib_node.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable /home/je/rover_ws/devel/.private/imu_calib/lib/imu_calib/apply_calib[0m
+[100%] [32m[1mLinking CXX executable /home/je/rover_ws/devel/.private/imu_calib/lib/imu_calib/do_calib[0m
+[100%] Built target apply_calib
+[100%] Built target do_calib

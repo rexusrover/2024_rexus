@@ -1,0 +1,584 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:5[m[K:
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:[m[K In function ‘[01m[Kvoid runMonoCallback()[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:235:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  235 |     [01;36m[KROS_ERROR[m[K((cares::marker::IMAGE_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:238:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  238 |   [01;36m[KROS_INFO[m[K(image.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:240:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  240 |     [01;36m[KROS_ERROR[m[K((cares::marker::CAMERA_INFO_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:243:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  243 |   [01;36m[KROS_INFO[m[K(camera_info.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:246:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  246 |     [01;36m[KROS_ERROR[m[K((cares::marker::MARKER_SIZE_D + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:[m[K In function ‘[01m[Kvoid runDepthCallback()[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:268:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  268 |     [01;36m[KROS_ERROR[m[K((cares::marker::IMAGE_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:271:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  271 |   [01;36m[KROS_INFO[m[K(image.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:273:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  273 |     [01;36m[KROS_ERROR[m[K((cares::marker::DEPTH_IMAGE_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:276:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  276 |   [01;36m[KROS_INFO[m[K(depth_image.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:278:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  278 |     [01;36m[KROS_ERROR[m[K((cares::marker::CAMERA_INFO_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:281:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  281 |   [01;36m[KROS_INFO[m[K(camera_info.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:286:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  286 |   [01;36m[KROS_INFO[m[K(t.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:[m[K In function ‘[01m[Kvoid runStereoCallback()[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:305:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  305 |     [01;36m[KROS_ERROR[m[K((cares::marker::IMAGE_LEFT_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:309:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  309 |     [01;36m[KROS_ERROR[m[K((cares::marker::IMAGE_RIGHT_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:313:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  313 |   [01;36m[KROS_INFO[m[K(image_left.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:314:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  314 |   [01;36m[KROS_INFO[m[K(image_right.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:316:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  316 |     [01;36m[KROS_ERROR[m[K((cares::marker::STEREO_INFO_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:319:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  319 |   [01;36m[KROS_INFO[m[K(stereo_info.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:[m[K In function ‘[01m[Kvoid getCharucoDetector(int)[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:342:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  342 |     [01;36m[KROS_ERROR[m[K((cares::marker::BOARD_WIDTH_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:346:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  346 |     [01;36m[KROS_ERROR[m[K((cares::marker::BOARD_HEIGHT_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:350:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  350 |     [01;36m[KROS_ERROR[m[K((cares::marker::SQUARE_SIZE_D + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  354 |     [01;36m[KROS_ERROR[m[K((cares::marker::MARKER_SIZE_D + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:[m[K In function ‘[01m[Kvoid getDiamondDetector(int)[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:369:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  369 |     [01;36m[KROS_ERROR[m[K((cares::marker::CENTRE_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:373:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  373 |     [01;36m[KROS_ERROR[m[K((cares::marker::TOP_LEFT_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:377:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  377 |     [01;36m[KROS_ERROR[m[K((cares::marker::TOP_RIGHT_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:381:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  381 |     [01;36m[KROS_ERROR[m[K((cares::marker::BOT_RIGHT_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:385:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  385 |     [01;36m[KROS_ERROR[m[K((cares::marker::BOT_LEFT_I + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:402:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  402 |     [01;36m[KROS_ERROR[m[K((cares::marker::MARKERS_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:405:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  405 |   [01;36m[KROS_INFO[m[K(marker.c_str());
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:407:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  407 |     [01;36m[KROS_ERROR[m[K((cares::marker::TF_PREFIX_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:421:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  421 |     [01;36m[KROS_ERROR[m[K((cares::marker::TF_PREFIX_S + " not set.").c_str());
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+      |                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/je/rover_ws/src/aruco_detector/src/marker_detector_node.cpp:425:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  425 |   [01;36m[KROS_INFO[m[K(tf_ns.c_str());
+      |   [01;36m[K^~~~~~~~[m[K

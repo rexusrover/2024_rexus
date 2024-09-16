@@ -1,0 +1,32 @@
+uint8 STOP    = 0
+uint8 MOVE = 1
+uint8 ACTUATE = 2
+
+uint8 command
+string link_id
+
+geometry_msgs/PoseStamped target_pose
+geometry_msgs/PoseStamped approach_pose
+
+#Please use this to specify bounding volumes or need to fix end effector
+#Init constraints is constraints moving to approach position, 
+#Final constraints moving between approach pose and target pose
+cares_msgs/PathPlanningConstraints target_constraints
+cares_msgs/PathPlanningConstraints approach_constraints
+---
+uint8 result
+uint8 FAILED_TO_REACH_APPROACH = 0
+uint8 FAILED_TO_REACH_TARGET = 1
+uint8 ACTUATOR_NOT_OPEN = 2
+uint8 FAILED_TO_ACTUATE = 3
+uint8 failure_reason
+
+---
+uint8 INIT       = 0
+uint8 MOVING_TO_APPROACH = 1
+uint8 MOVING_TO_TARGET   = 3
+uint8 MOVING_BACK_TO_APPROACH   = 4
+uint8 ACTUATING          = 5
+uint8 STOPPING           = 6
+
+uint8 feedback

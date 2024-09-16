@@ -1,0 +1,60 @@
+Not searching for unused variables given on the command line.
+[36m--[0m The C compiler identification is GNU 9.4.0
+[36m--[0m The CXX compiler identification is GNU 9.4.0
+[36m--[0m Check for working C compiler: /usr/bin/cc
+[36m--[0m Check for working C compiler: /usr/bin/cc -- works
+[36m--[0m Detecting C compiler ABI info
+[36m--[0m Detecting C compiler ABI info - done
+[36m--[0m Detecting C compile features
+[36m--[0m Detecting C compile features - done
+[36m--[0m Check for working CXX compiler: /usr/bin/c++
+[36m--[0m Check for working CXX compiler: /usr/bin/c++ -- works
+[36m--[0m Detecting CXX compiler ABI info
+[36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Detecting CXX compile features
+[36m--[0m Detecting CXX compile features - done
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/je/rover_ws/devel/.private/cares_msgs
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/je/rover_ws/devel;/home/je/orbbec_ws/devel;/home/je/robot_arm_ws/devel;/home/je/catkin_ws/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/je/rover_ws/devel;/home/je/orbbec_ws/devel;/home/je/robot_arm_ws/devel;/home/je/catkin_ws/devel;/opt/ros/noetic
+[36m--[0m Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python3
+[36m--[0m Using Debian Python package layout
+[36m--[0m Found PY_em: /usr/lib/python3/dist-packages/em.py
+[36m--[0m Using empy: /usr/lib/python3/dist-packages/em.py
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/je/rover_ws/build/cares_msgs/test_results
+[36m--[0m Forcing gtest/gmock from source, though one was otherwise available.
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[36m--[0m Found PythonInterp: /usr/bin/python3 (found version "3.8.10")
+[36m--[0m Found Threads: TRUE
+[36m--[0m Using Python nosetests: /usr/bin/nosetests3
+[36m--[0m catkin 0.8.10
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[36m--[0m +++ Messages: ArucoMarkers.msg;Cane.msg;CutPoint.msg;Fruitlet.msg;Fruitlets.msg;InstanceMasks.msg;Metrics.msg;Node.msg;NodeNeighbourInfo.msg;PathPlanningConstraints.msg;StereoCameraInfo.msg;Vine.msg
+[36m--[0m +++ Services: ArucoDetect.srv;CalibrationService.srv;Detection.srv;ExtractCutPoints.srv;ExtractThinPoints.srv;LoadVine.srv;MergeExtractor.srv;SaveCaneGT.srv;SetThinPoints.srv
+[36m--[0m Generating .msg files for action cares_msgs/Actuation /home/je/rover_ws/src/cares_msgs/action/Actuation.action
+Generating for action Actuation
+[36m--[0m Generating .msg files for action cares_msgs/ArchieRailCmd /home/je/rover_ws/src/cares_msgs/action/ArchieRailCmd.action
+Generating for action ArchieRailCmd
+[36m--[0m Generating .msg files for action cares_msgs/Cut /home/je/rover_ws/src/cares_msgs/action/Cut.action
+Generating for action Cut
+[36m--[0m Generating .msg files for action cares_msgs/Mapping /home/je/rover_ws/src/cares_msgs/action/Mapping.action
+Generating for action Mapping
+[36m--[0m Generating .msg files for action cares_msgs/MetricExtraction /home/je/rover_ws/src/cares_msgs/action/MetricExtraction.action
+Generating for action MetricExtraction
+[36m--[0m Generating .msg files for action cares_msgs/Navigation /home/je/rover_ws/src/cares_msgs/action/Navigation.action
+Generating for action Navigation
+[36m--[0m Generating .msg files for action cares_msgs/PlatformGoal /home/je/rover_ws/src/cares_msgs/action/PlatformGoal.action
+Generating for action PlatformGoal
+[36m--[0m Generating .msg files for action cares_msgs/Scanning /home/je/rover_ws/src/cares_msgs/action/Scanning.action
+Generating for action Scanning
+[36m--[0m Generating .msg files for action cares_msgs/Thin /home/je/rover_ws/src/cares_msgs/action/Thin.action
+Generating for action Thin
+[36m--[0m +++ Actions: Actuation.action;ArchieRailCmd.action;Cut.action;Mapping.action;MetricExtraction.action;Navigation.action;PlatformGoal.action;Scanning.action;Thin.action
+[36m--[0m cares_msgs: 75 messages, 9 services
+[36m--[0m Configuring done
+[36m--[0m Generating done
+[36m--[0m Build files have been written to: /home/je/rover_ws/build/cares_msgs

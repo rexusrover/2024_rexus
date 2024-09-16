@@ -1,0 +1,1 @@
+/home/je/rover_ws/devel/.private/cares_msgs/share/cares_msgs/msg/PlatformGoalAction.msg

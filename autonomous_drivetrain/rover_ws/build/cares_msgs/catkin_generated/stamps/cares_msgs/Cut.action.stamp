@@ -1,0 +1,24 @@
+uint8 CUT = 0
+uint8 STOP = 1
+uint8 command
+
+string cutting_frame
+string planning_frame
+cares_msgs/CutPoint[] cut_points
+---
+uint8 result
+cares_msgs/CutPoint[] successful_cuts
+cares_msgs/CutPoint[] failed_cuts
+---
+uint8 count
+uint8 total
+
+uint8 INIT = 0
+uint8 PROCESSING_CUT_POINTS = 1
+uint8 MAKING_CUT = 2
+uint8 STOPPING = 3
+uint8 TRANSITIONING = 4
+
+uint8 status
+
+cares_msgs/ActuationFeedback actuation_feedback

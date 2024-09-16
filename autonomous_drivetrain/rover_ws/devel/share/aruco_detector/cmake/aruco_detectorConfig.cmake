@@ -1,0 +1,1 @@
+/home/je/rover_ws/devel/.private/aruco_detector/share/aruco_detector/cmake/aruco_detectorConfig.cmake

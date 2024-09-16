@@ -1,0 +1,3 @@
+Symlinking /home/je/rover_ws/devel/lib/pkgconfig/aruco_detection.pc
+Symlinking /home/je/rover_ws/devel/share/aruco_detection/cmake/aruco_detectionConfig-version.cmake
+Symlinking /home/je/rover_ws/devel/share/aruco_detection/cmake/aruco_detectionConfig.cmake

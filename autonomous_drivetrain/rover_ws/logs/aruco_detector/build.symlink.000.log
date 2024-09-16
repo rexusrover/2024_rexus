@@ -1,0 +1,4 @@
+Symlinking /home/je/rover_ws/devel/lib/aruco_detector/marker_detector_node
+Symlinking /home/je/rover_ws/devel/lib/pkgconfig/aruco_detector.pc
+Symlinking /home/je/rover_ws/devel/share/aruco_detector/cmake/aruco_detectorConfig.cmake
+Symlinking /home/je/rover_ws/devel/share/aruco_detector/cmake/aruco_detectorConfig-version.cmake

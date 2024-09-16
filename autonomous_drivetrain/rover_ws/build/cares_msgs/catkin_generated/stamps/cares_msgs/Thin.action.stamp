@@ -1,0 +1,23 @@
+uint8 THIN = 0
+uint8 STOP = 1
+uint8 command
+
+string thinning_frame
+string planning_frame
+cares_msgs/Fruitlet[] fruitlets
+---
+uint8 result
+cares_msgs/Fruitlet[] succeeded
+cares_msgs/Fruitlet[] failed
+---
+uint8 count
+uint8 total
+
+uint8 INIT = 0
+uint8 PROCESSING_THIN_POINTS = 1
+uint8 THINNING_FRUITLET = 2
+uint8 STOPPING = 3
+uint8 TRANSITIONING = 4
+
+uint8 status
+cares_msgs/ActuationFeedback actuation_feedback

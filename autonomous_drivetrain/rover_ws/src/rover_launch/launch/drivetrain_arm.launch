@@ -1,0 +1,14 @@
+<launch>
+	<arg name="port_Arm" default="/dev/ttyUSB0" />
+	<arg name="port_Drivetrain" default="/dev/ttyUSB1" /> 	
+		<node pkg="rosserial_python" name="arm_node" type="serial_node.py" output="screen">
+			<param name="port" value="$(arg port_Arm)" />
+			<param name="baud" value="500000"/>
+		</node>
+
+		<node pkg="rosserial_python" name="drivetrain_node" type="serial_node.py" output="screen">
+                	<param name="port" value="$(arg port_Drivetrain)" />
+			<param name="baud" value="500000"/>
+        	</node>
+       
+</launch>

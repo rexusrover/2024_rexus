@@ -1,0 +1,41 @@
+ <launch>
+  <include file="$(find jackal_gazebo)/launch/jackal_world.launch" />
+  <include file="$(find jackal_viz)/launch/view_robot.launch" >
+    <param name="config" value='front_laser'/>
+  </include>
+
+
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="link1_broadcaster" args="-492818.45012936526 -5527517.1362377135 -0.1288058668560429 0 0 0 odom_gps odom" />
+
+  <node name="gps_conv" pkg="gps_common" type="utm_odometry_node">
+    <remap from="odom" to="odom"/>
+    <remap from="fix" to="/navsat/fix" />
+    <param name="rot_covariance" value="99999" />
+    <param name="frame_id" value="odom_gps" />
+  </node>
+
+  <node pkg="rtabmap_odom" type="rgbd_odometry" name="rgbd_odometry">
+    <param name="publish_tf" value="false"/>
+    <remap from="odom" to="vo"/>
+    <remap from="rgb/image" to="/realsense/color/image_raw"/>
+    <remap from="rgb/camera_info" to="/realsense/color/camera_info"/>
+    <remap from="depth/image" to="/realsense/depth/image_rect_raw"/>
+  </node>
+
+  <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+    <param name="output_frame" value="odom"/>
+    <param name="base_footprint_frame" value="base_link"/>
+    <param name="freq" value="30.0"/>
+    <param name="sensor_timeout" value="1.0"/>
+    <param name="odom_used" value="true"/>
+    <param name="imu_used" value="true"/>
+    <param name="vo_used" value="true"/>
+    <param name="debug" value="false"/>
+    <param name="self_diagnose" value="false"/>
+    
+    <remap from="/imu_data" to="/imu/data"/> -->
+    <!--remap from="vo" to="gps_meas" /-->
+  <!-- </node> -->
+  
+  
+ </launch>

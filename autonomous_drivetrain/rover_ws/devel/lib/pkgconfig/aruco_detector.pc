@@ -1,0 +1,1 @@
+/home/je/rover_ws/devel/.private/aruco_detector/lib/pkgconfig/aruco_detector.pc

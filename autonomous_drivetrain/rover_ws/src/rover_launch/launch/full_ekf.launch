@@ -1,0 +1,9 @@
+
+<launch>
+    <include file="$(find rover_launch)/launch/global_ekf.launch"/>
+
+    <include file="$(find rover_launch)/launch/local_ekf.launch"/>
+
+    <include file="$(find rover_launch)/launch/realsense_sim.launch"/>
+
+</launch>

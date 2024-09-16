@@ -1,0 +1,10 @@
+
+<launch>
+<node pkg="tf2_ros" type="static_transform_publisher" name="robot_model" args="0 0 -0.5 0 0 0 rover_base_link rover_base_footprint" />
+
+<!-- <node pkg="rosserial_python" type="serial_node.py" name="motor_controller" output="screen">
+  <param name="port" value="/dev/ttyUSB0" />
+  <param name="baud" value="57600" />
+</node> -->
+
+</launch>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_camera" args="0 0 0.5 0 0 3.142 base_link camera_link" />
+
+    <arg name="camera" default="camera" />
+
+    <include file="$(find realsense2_camera)/launch/rs_aligned_depth.launch"/>
+
+
+    <!-- <node type="rtabmap" name="rtabmap" pkg="rtabmap_slam">
+        <remap from="rgb/image" to="/$(arg camera)/color/image_raw"/>
+        <remap from="rgb/camera_info" to="/$(arg camera)/color/camera_info"/>
+        <remap from="depth/image" to="/$(arg camera)/aligned_depth_to_color/image_raw"/>
+        <param name="Rtabmap/DetectionRate" type="string" value="1"/>
+        <param name="frame_id" type="string" value="$(arg camera)_link"/>
+    </node> -->
+
+    <node type="rgbd_odometry" name="rgbd_odometry" pkg="rtabmap_odom" output="screen">
+
+        <remap from="rgb/image" to="/$(arg camera)/color/image_raw"/>
+        <remap from="rgb/camera_info" to="/$(arg camera)/color/camera_info"/>
+        <remap from="depth/image" to="/$(arg camera)/aligned_depth_to_color/image_raw"/>
+        <!-- <remap from="imu" to="/oak/imu/data"/> -->
+        <!--param name="frame_id" type="string" value="base_link"/-->
+        <param name="Odom/Strategy" type="string" value="1"/>
+        <!--[0=Frame-to-Map (F2M) 1=Frame-to-Frame (F2F) 2=Fovis 3=viso2 4=DVO-SLAM 5=ORB_SLAM2 6=OKVIS 7=LOAM 8=MSCKF_VIO 9=VINS-Fusion 10=OpenVINS 11=FLOAM 12=Open3D]-->
+        <param name="publish_tf" type="bool" value="false"/>
+        <!-- <param name="wait_imu_to_init" type="string" value="true"/> -->
+        <param name="approx_sync" type="bool" value="false"/>
+                <!-- <param name="approx_sync" type="string" value="false"/> -->
+
+
+        <param name="Vis/MaxFeatures" type="string" value="2000"/>
+        <param name="Vis/DepthAsMask" type="string" value="true"/>
+        <param name="Vis/EstimationType" type="string" value="1"/>
+        <param name="Vis/CorType" type="string" value="1"/>
+        <param name="Odom/ResetCountdown" type="string" value="5"/>
+        <param name="Odom/FilteringStrategy" type="string" value="0"/>
+
+
+        <param name="Odom/Holonomic" type="string" value="false"/>
+        <!-- <param name="Odom/ResetCountdown" type="string" value="0"/>
+        <param name="Odom/ResetCountdown" type="string" value="0"/>
+        <param name="Odom/ResetCountdown" type="string" value="0"/> -->
+     </node>
+
+
+</launch>

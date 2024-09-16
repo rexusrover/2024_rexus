@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/je/rover_ws/devel/lib/python3/dist-packages",
+        "/home/je/orbbec_ws/devel/lib/python3/dist-packages",
+        "/home/je/ROVER/skid4wd_ws/devel/lib/python3/dist-packages",
+        "/home/je/robot_arm_ws/devel/lib/python3/dist-packages",
+        "/home/je/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/je/rover_ws/devel/lib/python3/dist-packages",
+        "/home/je/orbbec_ws/devel/lib/python3/dist-packages",
+        "/home/je/ROVER/skid4wd_ws/devel/lib/python3/dist-packages",
+        "/home/je/robot_arm_ws/devel/lib/python3/dist-packages",
+        "/home/je/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
